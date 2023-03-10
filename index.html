@@ -30,81 +30,17 @@
         </div>
 
         <div id="curious-right">
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
-            <span>M</span>
+          
         </div>
     </section>
+    <script>
+        const mContainer = document.querySelector('#curious-right')
+        for(let i = 0; i < 450; i++){
+            const m = document.createElement('span')
+            m.innerText = 'M'
+            m.setAttribute('class', 'curious-m')
+            mContainer.appendChild(m)
+        }
+    </script>
 </body>
 </html>

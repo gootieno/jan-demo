@@ -83,8 +83,97 @@ p.curious {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 
 #curious-right > span {
     margin: 1px;
+}
+
+#curious-right > span.curious-m:nth-child(-n+5){
+    color: var(--custom-background);
+}
+
+#curious-right > span.curious-m:nth-child(-4n+10){
+    color: var(--custom-background)
+}
+
+/* slow */
+.curious-m:nth-child(4n+350){
+    color: var(--custom-background)
+}
+
+/* medium */
+.curious-m:nth-child(-4n+150){
+    /* color: green; */
+    animation: medium linear alternate infinite 2s 5s;
+}
+
+/* fast */
+
+.curious-m:nth-child(-8n+40){
+    color: purple;
+    animation: fast linear alternate infinite 2s 10s;
+}
+
+.curious-m:nth-child(-4n+220){
+    color: var(--custom-background);
+}
+
+.curious-m:nth-child(7n+210){
+    animation: medium linear alternate infinite 2s 7s;
+}
+
+.curious-m:nth-child(10n+210){
+    color: var(--custom-background);
+}
+.curious-m:nth-child(3n+50){
+    color: var(--custom-background)
+}
+.curious-m:nth-child(7n+30){
+    color: var(--custom-background)
+}
+
+.curious-m:nth-child(-4n+210){
+    color: var(--custom-background)
+}
+
+.curious-m:nth-child(-5n+40){
+    color: var(--custom-background);
+}
+
+
+.curious-m:nth-child(2n+345){
+    color: var(--custom-background);
+}
+
+
+@keyframes slow {
+    from {
+        color: black;
+    }
+
+    to {
+        color: var(--custom-background);
+    }
+}
+
+@keyframes medium {
+    from {
+        color: black;
+    }
+
+    to {
+        color: var(--custom-background);
+    }
+}
+
+@keyframes fast {
+    from {
+        color: black;
+    }
+
+    to {
+        color: var(--custom-background);
+    }
 }
